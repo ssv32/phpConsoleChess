@@ -14,12 +14,12 @@ phpConsoleChess
  - фикс ошибок (типа захват чужой фигуры, когда ходит другой)
 
 
-Пример вывода в консоли:
----===chess is run===---
-You run action if console - chess.php run ... 
-actions: HelpFigure, HelpGame
-
-Create new game - player 1 and player 2, show this game
+Пример вывода в консоли:<br/>
+---===chess is run===---<br/>
+You run action if console - chess.php run ... <br/>
+actions: HelpFigure, HelpGame<br/>
+<br/>
+Create new game - player 1 and player 2, show this game<br/>
 ============plan=================<br/>
 ⋅⋅⋅⋅⋅⋅A⋅⋅⋅⋅B⋅⋅⋅⋅C⋅⋅⋅⋅D⋅⋅⋅⋅⋅I⋅⋅⋅⋅F⋅⋅⋅⋅G⋅⋅⋅⋅H<br/>
 1⋅⋅|110|121|130|171|150|131|120|111|⋅⋅1<br/> 
