@@ -33,16 +33,23 @@ if($isRunConsole){ // пока запускать только из консол
      * showHelpFigure - показать подсказку по фигурам
      */
     function showHelpFigure(){
-        echo 'ячейка xyz - x - это игрок (1 или 2), y - это фигура (ниже фигуры), z - это доска (0 - белая, 1 - чёрная)';
-        echo '8 - пешка, 1 - ладья, 2 - конь, 3 - офицер, 5 - ферзь, 7 - кароль';
+        global $br;
+        echo $br.'==============HelpFigure=============='.$br;
+        echo 'cell xyz - x - this players (1 or 2), y - this chess piece (at the bottom of the description), z - thiis chess board (0 - white, 1 - black)';
+        echo '8 - pawn, 1 - rook, 2 - horse, 3 - bishop, 5 - queen, 7 - king';
+        echo $br.'======================================'.$br;
     }
 
     /**
      * showHelpGame - показать подсказку по действиям в игре
      */
     function showHelpGame(){
-        echo $br.'ход - run go <игрок (1 или 2)> <фигура> <куда ходить, ряд> <куда ходить, буква> <откуда ходить, ряд> <откуда ход, буква>';
-        echo $br.'сброс игры - clear';
+        global $br;
+        echo $br.'===============showHelpGame==========='.$br;
+        echo $br.' name - command';
+        echo $br.'move - run go <players (1 or 2)> <chess piece> <where to go, row> <where to go, letter> <from to go, row> <from to go, letter>';
+        echo $br.'clear game - clear';
+        echo $br.'======================================'.$br;
     }
 
     /**
@@ -95,7 +102,7 @@ if($isRunConsole){ // пока запускать только из консол
      * @param array $letters
      */
     function showLetters($letters){
-            global $br;
+        global $br;
         echo $br;
         echo '   ';
         foreach ($letters as $value) {
@@ -147,12 +154,6 @@ if($isRunConsole){ // пока запускать только из консол
      * @return typeва
      */
     function checkColorCell($plane, $stepN, $stepLetter){
-        
-        print_r($plane);
-        
-        echo ' x='.$stepN.' y='.$stepLetter.' '.$plane[$stepN][$stepLetter].'   ====';
-        
-        
         return checkBlackCellByString( $plane[$stepN][$stepLetter] );
     }	
 
